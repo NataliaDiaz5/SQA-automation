@@ -1,0 +1,27 @@
+
+apply plugin: 'java-library'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+    jcenter()
+}
+
+dependencies {
+
+	// Cucumber-Java para poder utilizar Cucumber con lenguaje Java
+	compile group: 'io.cucumber', name: 'cucumber-java', version: '5.0.0'
+	
+	// Cucumber-JUnit para poder ejecutar pruebas con JUnit y Cucumber
+	testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '5.0.0'
+	
+	// Hamcrest - Meramente con propositos de validaciones
+	testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+	
+	// Selenium - Con esto automatizamos
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.5'
+
+    testImplementation 'junit:junit:4.12'
+    
+}
+
