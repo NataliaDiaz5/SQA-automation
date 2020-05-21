@@ -1,2 +1,2 @@
 # SQA-automation
-just another repository
+Example create a new register with Kraken library
