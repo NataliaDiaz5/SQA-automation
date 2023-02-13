@@ -1,2 +1,2 @@
 # SQA-automation
-Example create a new register with Kraken library
+Example of how to create a new register with Kraken library
